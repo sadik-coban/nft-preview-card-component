@@ -1,111 +1,111 @@
-body{
-    background-color:hsl(217, 54%, 11%);
-  }
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
-  .card{
-    max-width: 400px;
-    padding:30px;
-    background-color: hsl(216, 50%, 16%);
-    /*This is for centeralize the main element according to body.*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); /* IE 9 */
-    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
-    /*layout*/
-    display: grid;
-    border-radius: 30px;
-  }
-  .image-section{
-    display: flex;
-    max-width: 400px;
-    height: 400px;
-    
-  }
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.card {
+  max-width: 400px;
+  padding: 30px;
+  background-color: hsl(216, 50%, 16%);
+  /*This is for centeralize the main element according to body.*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+  /*layout*/
+  display: grid;
+  border-radius: 30px;
+}
+.image-section {
+  display: flex;
+  max-width: 400px;
+  height: 400px;
+}
 
+.nft-image-on-hover-state {
+  width: 400px;
+  height: 400px;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.nft-image-on-hover-state:hover {
+  width: 400px;
+  height: 400px;
+  opacity: 0.6;
+}
 
-  .nft-image-on-hover-state{
-    width: 400px;
-    height: 400px;
-    background-color: hsl(178, 100%, 50%);
-    opacity: 0;
-    position: absolute;
-    border-radius: 10px;
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;/* aslısadık */
-    
-  }
-  .nft-image-on-hover-state:hover{
-    width: 400px;
-    height: 400px;
-    opacity: 0.6;
-  }
+.image-section {
+  position: relative;
+}
+.image-section img {
+  border-radius: 10px;
+}
+.information-section {
+  font-family: "Outfit", sans-serif;
+}
+.information-section > h1 {
+  color: white;
+}
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+}
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+.etherium-and-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.etherium {
+  display: flex;
+}
+.creator {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+}
+.creator-photo {
+  align-self: center;
+  margin-right: 20px;
+}
+.creator-photo img {
+  border: 1px solid white;
+  border-radius: 50%;
+  max-width: 30px;
+}
+.creator-name {
+  color: white;
+  text-decoration: none;
+}
 
-  .image-section{
-    position: relative;
+.creator-name:hover {
+  color: hsl(178, 100%, 50%);
+}
+@media (max-width: 500px) {
+  .card {
+    max-width: 300px;
+    padding: 24px;
   }
-  .image-section img{
-    border-radius: 10px;
-  }
-  .information-section{
-    font-family: 'Outfit', sans-serif;
-  }
-  .information-section > h1{
-    color:white;
-  }
-  p{
-    color: hsl(215, 51%, 70%);
-    font-size: 18px;
-    font-weight: 300;
-  }
-  hr{
-    border:1px solid hsl(215, 32%, 27%);
-  }
-  .etherium-and-time{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .etherium{
-    display: flex;
-  }
-  .creator{
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    align-items: space-between;
-    
-  }
-  .creator-photo{
-    align-self: center;
-    margin-right: 20px;
-  }
-  .creator-photo img{
-    border: 1px solid white;
-    border-radius: 50%;
-    max-width: 30px;
-  }
-  .creator-name{
-    color:white;
-    text-decoration: none;
-  }
-
-  .creator-name:hover{
-    color:hsl(178, 100%, 50%);
-  }
-  @media (max-width:500px) {
-    .card{
-      max-width: 300px;
-      padding:24px;
-    }
-    .image-section{
+  .image-section {
     display: flex;
     max-width: 300px;
     height: 300px;
-    
   }
-  }
+}
